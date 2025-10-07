@@ -1,36 +1,20 @@
-import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-  } from "@/components/ui/navigation-menu";
-  import Link from "next/link";
-  import { ComponentProps } from "react";
-  
-  export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
-    <NavigationMenu {...props}>
-      <NavigationMenuList className="gap-3 space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <Link href="#">Home</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <Link href="#">Blog</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <Link href="#">About</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild>
-            <Link href="#">Contact Us</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Droplet, Menu, Rocket } from "lucide-react";
+import { NavMenu } from "./nav-menu";
+
+export const NavigationSheet = () => {
+  return (
+    <Sheet>
+      <SheetTrigger asChild>
+        <Button variant="outline" size="icon">
+          <Menu />
+        </Button>
+      </SheetTrigger>
+      <SheetContent className="px-6 py-3">
+        <Droplet />
+        <NavMenu orientation="vertical" className="mt-6 [&>div]:h-full" />
+      </SheetContent>
+    </Sheet>
   );
-  
+};
