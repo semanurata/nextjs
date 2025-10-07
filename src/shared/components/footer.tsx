@@ -34,10 +34,10 @@ const footerLinks = [
   },
 ];
 
-const Footer05Page = () => {
+const Footer = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <div className="grow bg-muted" />
+    <div className="flex flex-col">
+      <div className="bg-muted" />
       <footer className="border-t">
         <div className="max-w-(--breakpoint-xl) mx-auto">
           <div className="py-12 flex flex-col justify-start items-center">
@@ -104,7 +104,5 @@ const Footer05Page = () => {
     </div>
   );
 };
-
-export default Footer05Page;
 
 export { Footer };
