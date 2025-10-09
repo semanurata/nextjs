@@ -12,22 +12,22 @@ import {
       <NavigationMenuList className="gap-3 space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="#">Home</Link>
+            <Link href="page">Anasayfa</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="#">Blog</Link>
+            <Link href="kedi-bakim">Kedi bakımı</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="#">About</Link>
+            <Link href="cinsler">Cinsler</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="#">Contact Us</Link>
+            <Link href="sahiplendirme">Sahiplendirme</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
