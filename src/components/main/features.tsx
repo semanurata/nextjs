@@ -18,8 +18,7 @@ const features = [
   {
     icon: BookCheck,
     title: "Scottish Fold",
-    description:
-      "Kıvrık kulaklı, uysal ve insanlara bağlı bir kedidir..",
+    description: "Kıvrık kulaklı, uysal ve insanlara bağlı bir kedidir..",
   },
   {
     icon: ChartPie,
@@ -30,8 +29,7 @@ const features = [
   {
     icon: Users,
     title: "Siamese (Siyam)",
-    description:
-      "Mavi gözlü, konuşkan ve enerjiktir.",
+    description: "Mavi gözlü, konuşkan ve enerjiktir.",
   },
   {
     icon: FolderSync,
@@ -42,12 +40,11 @@ const features = [
   {
     icon: Zap,
     title: "Sphynx",
-    description:
-      "Tüysüz olmasına rağmen sıcakkanlı ve meraklıdır.",
+    description: "Tüysüz olmasına rağmen sıcakkanlı ve meraklıdır.",
   },
 ];
 
-const Features05Page = () => {
+const Features = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-(--breakpoint-lg) w-full py-10 px-6">
@@ -83,4 +80,4 @@ const Features05Page = () => {
   );
 };
 
-export default Features05Page;
+export default Features;

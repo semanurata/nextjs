@@ -1,3 +1,9 @@
-import Features05Page from "@/components/ui/features5";
+import Features from "@/components/main/features";
 
-<Features05Page />
+export default function Cinsler() {
+  return (
+    <>
+      <Features />
+    </>
+  );
+}
