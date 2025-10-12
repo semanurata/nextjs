@@ -1,7 +1,23 @@
+import KediBakimFeatures from "@/components/main/kedibakim-features";
+import { Marquee } from "@/components/ui/marquee";
+
 export default function KediBakim() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <p>test</p>
-    </div>
+    <>
+   <Marquee>
+    <p>MİYAV </p>
+    <p>MİYAV</p>
+    <p>MİYAV </p>
+    <p>MİYAV</p>
+    <p>MİYAV </p>
+    <p>MİYAV</p>
+    <p>MİYAV </p>
+    <p>MİYAV</p>
+   </Marquee>
+   
+   <KediBakimFeatures />
+   </>
+  
   );
+ 
 }
