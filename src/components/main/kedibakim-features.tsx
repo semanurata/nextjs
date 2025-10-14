@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Image, { getImageProps } from "next/image";
 import Link from "next/link";
+import { SparklesText } from "@/components/ui/sparkles-text"
 
 const features = [
   {
@@ -9,6 +11,7 @@ const features = [
     details:
       "Kısa tüylü kediler, Haftada 1-2 kez taramak yeterlidir. Uzun tüylü kediler, Günlük tarama gerekir. Tüy yumağı oluşumunu önler.",
     tutorialLink: "https://markamama.com.tr/kedilerde-tuy-bakimi-ve-genel-bakim--part-1#:~:text=Haftada%20birka%C3%A7%20kez%20elle%20kuvvetlice,i%C3%A7in%20bunlar%C4%B1n%20f%C4%B1r%C3%A7alanmas%C4%B1%20tavsiye%20edilmez.",
+     image: "/"
   },
   {
     category: "Beslenme",
@@ -67,7 +70,7 @@ const KediBakimFeatures = () => {
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-(--breakpoint-lg) w-full py-10 px-6">
         <h2 className="text-4xl md:text-[2.75rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-xl text-pretty sm:mx-auto sm:text-center">
-          KEDİ BAKIMINA DAİR HER ŞEYY!
+        <SparklesText>KEDİ BAKIMINA DAİR HER ŞEYY!</SparklesText>
         </h2>
         <p className="mt-2 text-muted-foreground text-lg sm:text-xl sm:text-center">
         Kedi bakımı sadece mama vermekle bitmez! Sağlıklı bir yaşam için dikkat edilmesi gereken tüm bakım önerilerini adım adım paylaştık.

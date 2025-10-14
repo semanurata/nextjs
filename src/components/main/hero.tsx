@@ -26,7 +26,7 @@ const Hero = () => {
           </h1>
         </AuroraText>
         <p className="mt-6 md:text-lg">
-          Kediseverlerin buluşma noktası! Burada patili dostlarımız hakkında her
+          Kedi severlerin buluşma noktası! Burada patili dostlarımız hakkında her
           şeyi bulabilirsiniz.
         </p>
         <div className="mt-12 flex items-center justify-center gap-4">
