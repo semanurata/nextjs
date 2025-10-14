@@ -13,7 +13,11 @@ export const NavigationSheet = () => {
         </Button>
       </SheetTrigger>
       <SheetContent className="px-6 py-3">
-        <Button variant="outline" size="icon" className="flex justify-start cursor-pointer">
+        <Button
+          variant="outline"
+          size="icon"
+          className="flex justify-start cursor-pointer"
+        >
           <Link href="/">
             <Cat />
           </Link>
