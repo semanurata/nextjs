@@ -1,46 +1,47 @@
+import { SparklesText } from "@/components/ui/sparkles-text";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import {
-  BookCheck,
-  ChartPie,
-  FolderSync,
-  Goal,
-  Users,
-  Zap,
-} from "lucide-react";
+import { CatIcon } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
-    icon: Goal,
+    icon: CatIcon,
     title: "British Shorthair",
     description:
       "Yumuşak tüyleri ve yuvarlak yüzüyle tanınır, sakin ve sevecendir.",
+    image: "/images/british-kedi.jpg",
   },
   {
-    icon: BookCheck,
+    icon: CatIcon,
     title: "Scottish Fold",
     description: "Kıvrık kulaklı, uysal ve insanlara bağlı bir kedidir..",
+    image: "/images/british-kedi.jpg",
   },
   {
-    icon: ChartPie,
+    icon: CatIcon,
     title: "Persian (İran Kedisi)",
     description:
       "Uzun tüyleriyle asil bir görünüme sahiptir, ev yaşamına uygundur.",
+    image: "/images/british-kedi.jpg",
   },
   {
-    icon: Users,
+    icon: CatIcon,
     title: "Siamese (Siyam)",
     description: "Mavi gözlü, konuşkan ve enerjiktir.",
+    image: "/images/british-kedi.jpg",
   },
   {
-    icon: FolderSync,
+    icon: CatIcon,
     title: "Turkish Van (Van Kedisi)",
     description:
       "Suya girmeyi sever, beyaz tüyleri ve renkli kuyruğuyla tanınır.",
+    image: "/images/british-kedi.jpg",
   },
   {
-    icon: Zap,
+    icon: CatIcon,
     title: "Sphynx",
     description: "Tüysüz olmasına rağmen sıcakkanlı ve meraklıdır.",
+    image: "/images/british-kedi.jpg",
   },
 ];
 
@@ -48,11 +49,12 @@ const Features = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-(--breakpoint-lg) w-full py-10 px-6">
-        <h2 className="text-4xl md:text-[2.5rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-xl text-pretty">
-          Strengthen Your Strategy
+        <h2 className="text-4xl md:text-[2.5rem] md:leading-[1.2] font-semibold tracking-[-0.03em] text-pretty sm:text-center">
+          <SparklesText>Hangi Kedi Sana Göre?</SparklesText>
         </h2>
-        <p className="mt-2 text-muted-foreground text-lg sm:text-xl">
-          Enhance your strategy with intelligent tools designed for success.
+        <p className="mt-2 text-muted-foreground text-lg sm:text-xl text-center">
+          Bazıları miskin, bazıları konuşkan, bazıları tam bir sevgi pıtırcığı!
+          İşte en sevilen kedi cinsleri ve onlarla ilgili bilmen gerekenler.
         </p>
         <div className="mt-10 w-full mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
           {features.map((feature) => (
@@ -70,7 +72,14 @@ const Features = () => {
                 </p>
               </CardHeader>
               <CardContent className="mt-auto px-0 pb-0">
-                <div className="bg-muted h-40 ml-6 rounded-tl-xl" />
+                <div className="bg-red-500 h-40 ml-6 rounded-tl-xl">
+                  <Image
+                    src={feature.image}
+                    alt={feature.title}
+                    width={1080}
+                    height={720}
+                  />
+                </div>
               </CardContent>
             </Card>
           ))}
