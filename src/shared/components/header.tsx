@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { NavMenu } from "@/components/nav-menu";
 import { NavigationSheet } from "@/components/navigation-sheet";
-import { Cat, Rocket, SunIcon } from "lucide-react";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { Cat } from "lucide-react";
 import Link from "next/link";
 
 const Header = () => {
@@ -10,7 +11,11 @@ const Header = () => {
       <nav className="h-16 bg-background border-b">
         <div className="h-full flex items-center justify-between max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-8">
-            <Button variant="outline" size="icon" className="flex justify-start cursor-pointer">
+            <Button
+              variant="outline"
+              size="icon"
+              className="flex justify-start cursor-pointer"
+            >
               <Link href="/">
                 <Cat />
               </Link>
@@ -22,12 +27,11 @@ const Header = () => {
 
           <div className="flex items-center gap-3">
             <Button variant="outline" className="hidden sm:inline-flex">
-              Sign In
+              Giriş Yap
             </Button>
-            <Button>Sign Up</Button>
-            <Button size="icon" variant="outline">
-              <SunIcon />
-            </Button>
+            <Button>Kayıt Ol</Button>
+            {/* Eski SunIcon yerine yeni ThemeToggle bileşeni */}
+            <ThemeToggle />
 
             {/* Mobile Menu */}
             <div className="md:hidden">

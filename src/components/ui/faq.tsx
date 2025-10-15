@@ -5,31 +5,42 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+// SSS listesi: kullanıcıların sık sorduğu sorular ve anlaşılır kısa cevaplar
 const faq = [
   {
-    question: "What is your return policy?",
+    question: "❓ Kediler gerçekten 9 cana sahip mi?",
     answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+      "➡️ Hayır ama öyleymiş gibi davranıyorlar. Tehlikeyi iyi atlatırlar.",
   },
   {
-    question: "How do I track my order?",
+    question: "❓ Kediler neden mırıldanır?",
     answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+      "➡️ Mutlu olduklarında… bazen de kendilerini sakinleştirmek için.",
   },
   {
-    question: "Do you ship internationally?",
+    question: "❓ Kediler geceleri neden bu kadar aktif?",
     answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+      "➡️ Çünkü içlerinde minik bir gece avcısı yaşıyor.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "❓ Kediler ilgi istemediğinde ne yapmalı?",
     answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
+      "➡️ Onurlu bir şekilde geri çekil ve uygun zamanda tekrar dene.",
   },
   {
-    question: "What if I receive a damaged item?",
+    question: "❓ Kediler insanları anlar mı?",
     answer:
-      "Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
+      "➡️ Evet… sadece bazen görmezden gelmeyi tercih eder.",
+  },
+  {
+    question: "❓ Kedi sahiplenmeden önce ne hazırlamalıyım?", // Yeni SSS maddesi
+    answer:
+      "➡️ Mama-kap, su kabı, kum kabı, kaliteli kum, tarak, tırmalama tahtası ve oyuncaklar.", // Yeni cevap
+  },
+  {
+    question: "❓ Evde kedi alerjisi olanlar ne yapmalı?", // Yeni SSS maddesi
+    answer:
+      "➡️ HEPA filtreli hava temizleyici, düzenli temizlik ve temas sonrası elleri yıkamak yardımcı olur.", // Yeni cevap
   },
 ];
 
@@ -38,9 +49,10 @@ const FAQ01 = () => {
     <div className=" flex items-center justify-center px-6 py-24">
       <div className="max-w-xl">
         <h2 className="text-4xl md:text-5xl leading-[1.15]! font-semibold tracking-tighter text-center">
-          Questions & Answers
+          Soru & Cevap
         </h2>
 
+        {/* Tek seferde bir sorunun açık kalacağı akordeon */}
         <Accordion type="single" className="mt-6" defaultValue="question-0">
           {faq.map(({ question, answer }, index) => (
             <AccordionItem key={question} value={`question-${index}`}>

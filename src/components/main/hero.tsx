@@ -13,25 +13,39 @@ const Hero = () => {
 
   const images = [
     {
-      src: "/images/kedi.jpg",
+      src: "/images/hero1.jpg",
       alt: "Sevimli Kedi",
       title: "MİYAV MİYAV!",
       description:
         "Kedi severlerin buluşma noktası! Burada patili dostlarımız hakkında her şeyi bulabilirsiniz.",
     },
     {
-      src: "/images/british-kedi.jpg",
-      alt: "British Shorthair Kedi",
-      title: "BRİTİSH SHORTHAİR",
+      src: "/images/hero2.jpg",
+      alt: "MİYAV MİYAV!",
+      title: "MİYAV MİYAV!",
       description:
-        "Sakin ve sevimli British Shorthair kedilerimizle tanışın. Mükemmel aile dostu!",
+        "Bir kediyle tanıştığın an hayatın güzelleşir.",
     },
     {
-      src: "/images/kedi.jpg",
-      alt: "Van Kedisi",
-      title: "VAN KEDİSİ",
+      src: "/images/hero3.jpg",
+      alt: "MİYAV MİYAV!",
+      title: "MİYAV MİYAV!",
       description:
-        "Enerjik ve oyuncu Van kedilerimiz. Gözlerindeki mavi renk büyüleyici!",
+        "Kedime sordum, bu siteyi o onayladı.",
+    },
+    {
+      src: "/images/hero4.jpg",
+      alt: "MİYAV MİYAV!",
+      title: "MİYAV MİYAV!",
+      description:
+        "Kedim bu siteyi beğendi.",
+    },
+    {
+      src: "/images/hero5.jpg", // Yeni görsel yolu
+      alt: "Mutlu kedi", // Yeni görsel için alternatif metin
+      title: "KEDİ DOSTU BİR DÜNYA", // Yeni görsel için başlık
+      description:
+        "Kedi bakımı, cinsler ve sahiplendirme hakkında aradığın her şey burada.", // Yeni görsel açıklaması
     },
   ];
 
@@ -101,19 +115,30 @@ const Hero = () => {
 
         {/* Butonlar */}
         <div className="mt-12 flex items-center justify-center gap-4">
-          <Button
-            size="lg"
-            className="rounded-full text-base bg-white text-black hover:bg-white/90"
+          {/* Başlangıç butonunu kedi cinsleri sayfasına yönlendiriyoruz */}
+          <Link href="/cinsler" aria-label="Kedi cinslerini keşfet sayfasına git">{/* Erişilebilirlik için açıklayıcı etiket */}
+            <Button
+              size="lg"
+              className="rounded-full text-base bg-white text-black hover:bg-white/90"
+            >
+              Keşfet <ArrowUpRight className="size-5" />{/* Daha net Türkçe CTA */}
+            </Button>
+          </Link>
+          {/* Tanıtım videosuna giden buton */}
+          <Link
+            href="https://www.youtube.com/results?search_query=cute+cats" // Örnek bir video araması
+            target="_blank" // Yeni sekmede aç
+            rel="noopener noreferrer" // Güvenlik için
+            aria-label="Kedi videolarını izle"
           >
-            Get Started <ArrowUpRight className="size-5" />
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="rounded-full text-base shadow-none border-white text-white hover:bg-white hover:text-black"
-          >
-            <CirclePlay className="size-5" /> Watch Cat
-          </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="rounded-full text-base shadow-none border-white text-white hover:bg-white hover:text-black"
+            >
+              <CirclePlay className="size-5" /> Kedi İzle{/* Türkçe buton metni */}
+            </Button>
+          </Link>
         </div>
 
         {/* Görsel göstergeler */}

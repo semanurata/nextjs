@@ -80,71 +80,73 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Tatlı pembe-sarı-kahve renk şeması */
+  --background: oklch(0.98 0.02 60); /* Açık pembe-krem */
+  --foreground: oklch(0.25 0.05 30); /* Sıcak koyu kahve */
+  --card: oklch(0.95 0.03 55); /* Açık pembe */
+  --card-foreground: oklch(0.25 0.05 30);
+  --popover: oklch(0.95 0.03 55);
+  --popover-foreground: oklch(0.25 0.05 30);
+  --primary: oklch(0.6 0.15 25); /* Sıcak turuncu-kahve */
+  --primary-foreground: oklch(0.98 0.02 60);
+  --secondary: oklch(0.9 0.08 50); /* Tatlı sarı */
+  --secondary-foreground: oklch(0.3 0.05 30);
+  --muted: oklch(0.92 0.05 55);
+  --muted-foreground: oklch(0.5 0.05 35);
+  --accent: oklch(0.85 0.12 45); /* Altın sarısı */
+  --accent-foreground: oklch(0.25 0.05 30);
+  --destructive: oklch(0.6 0.2 15); /* Sıcak kırmızı */
+  --border: oklch(0.88 0.05 50);
+  --input: oklch(0.88 0.05 50);
+  --ring: oklch(0.6 0.15 25);
+  --chart-1: oklch(0.7 0.15 30); /* Turuncu */
+  --chart-2: oklch(0.65 0.12 60); /* Sarı */
+  --chart-3: oklch(0.6 0.1 120); /* Yeşil */
+  --chart-4: oklch(0.7 0.1 200); /* Mavi */
+  --chart-5: oklch(0.65 0.12 280); /* Mor */
+  --sidebar: oklch(0.95 0.03 55);
+  --sidebar-foreground: oklch(0.25 0.05 30);
+  --sidebar-primary: oklch(0.6 0.15 25);
+  --sidebar-primary-foreground: oklch(0.98 0.02 60);
+  --sidebar-accent: oklch(0.9 0.08 50);
+  --sidebar-accent-foreground: oklch(0.3 0.05 30);
+  --sidebar-border: oklch(0.88 0.05 50);
+  --sidebar-ring: oklch(0.6 0.15 25);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Dark mode için tatlı koyu pembe-sarı-kahve tonları */
+  --background: oklch(0.15 0.02 30); /* Koyu kahve */
+  --foreground: oklch(0.9 0.02 60); /* Açık pembe-krem */
+  --card: oklch(0.2 0.03 35); /* Koyu gri-kahve */
+  --card-foreground: oklch(0.9 0.02 60);
+  --popover: oklch(0.2 0.03 35);
+  --popover-foreground: oklch(0.9 0.02 60);
+  --primary: oklch(0.7 0.15 25); /* Parlak turuncu */
+  --primary-foreground: oklch(0.15 0.02 30);
+  --secondary: oklch(0.3 0.08 50); /* Koyu sarı */
+  --secondary-foreground: oklch(0.9 0.02 60);
+  --muted: oklch(0.25 0.05 40);
+  --muted-foreground: oklch(0.6 0.05 50);
+  --accent: oklch(0.5 0.12 45); /* Altın */
+  --accent-foreground: oklch(0.9 0.02 60);
+  --destructive: oklch(0.6 0.2 15);
+  --border: oklch(0.3 0.05 40);
+  --input: oklch(0.3 0.05 40);
+  --ring: oklch(0.7 0.15 25);
+  --chart-1: oklch(0.7 0.15 30);
+  --chart-2: oklch(0.65 0.12 60);
+  --chart-3: oklch(0.6 0.1 120);
+  --chart-4: oklch(0.7 0.1 200);
+  --chart-5: oklch(0.65 0.12 280);
+  --sidebar: oklch(0.2 0.03 35);
+  --sidebar-foreground: oklch(0.9 0.02 60);
+  --sidebar-primary: oklch(0.7 0.15 25);
+  --sidebar-primary-foreground: oklch(0.15 0.02 30);
+  --sidebar-accent: oklch(0.3 0.08 50);
+  --sidebar-accent-foreground: oklch(0.9 0.02 60);
+  --sidebar-border: oklch(0.3 0.05 40);
+  --sidebar-ring: oklch(0.7 0.15 25);
 }
 
 @layer base {
@@ -153,5 +155,44 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* Ana arkaplan: tatlı pembe-sarı-kahve gradient */
+  body {
+    background: linear-gradient(135deg, #fef2f2 0%, #fce7f3 15%, #fef3c7 30%, #fde68a 45%, #f59e0b 60%, #d97706 75%, #92400e 90%, #78350f 100%);
+    background-attachment: fixed; /* Sabit gradient arkaplan */
+    min-height: 100vh;
+  }
+  
+  /* Kedi pati izi pattern - subtle overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1) 2px, transparent 2px),
+      radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 2px, transparent 2px),
+      radial-gradient(circle at 40% 60%, rgba(255,255,255,0.1) 2px, transparent 2px),
+      radial-gradient(circle at 60% 40%, rgba(255,255,255,0.1) 2px, transparent 2px);
+    background-size: 100px 100px, 120px 120px, 80px 80px, 90px 90px;
+    background-position: 0 0, 30px 30px, 60px 60px, 90px 90px;
+    pointer-events: none; /* Mouse etkileşimlerini engellemez */
+    z-index: -1; /* İçeriğin altında kalır */
+  }
+  
+  /* Dark mode için tatlı koyu gradient */
+  .dark body {
+    background: linear-gradient(135deg, #2d1b2e 0%, #3d2a3e 15%, #4a3c2a 30%, #5d4e37 45%, #6b5b47 60%, #8b7355 75%, #a68b5b 90%, #c4a484 100%);
+  }
+  
+  .dark body::before {
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05) 2px, transparent 2px),
+      radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 2px, transparent 2px),
+      radial-gradient(circle at 40% 60%, rgba(255,255,255,0.05) 2px, transparent 2px),
+      radial-gradient(circle at 60% 40%, rgba(255,255,255,0.05) 2px, transparent 2px);
   }
 }
