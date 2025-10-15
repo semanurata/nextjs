@@ -22,7 +22,7 @@ const features: Feature[] = [
       "Kısa tüylü kediler, Haftada 1-2 kez taramak yeterlidir. Uzun tüylü kediler, Günlük tarama gerekir. Tüy yumağı oluşumunu önler.",
     tutorialLink:
       "https://markamama.com.tr/kedilerde-tuy-bakimi-ve-genel-bakim--part-1#:~:text=Haftada%20birka%C3%A7%20kez%20elle%20kuvvetlice,i%C3%A7in%20bunlar%C4%B1n%20f%C4%B1r%C3%A7alanmas%C4%B1%20tavsiye%20edilmez.",
-      image: "/images/cat fur care.jpg",
+    image: "/images/cat fur care.jpg",
   },
   {
     category: "Nutrition",
@@ -31,7 +31,7 @@ const features: Feature[] = [
       "Yaşa, kiloya ve aktiviteye göre kaliteli mama seçilmeli. Sürekli temiz su bulundurmak şarttır. Ev yemekleri ve süt genelde sindirim sorunlarına neden olabilir.",
     tutorialLink:
       "https://www.hospiveteriner.com/kedimizi-nasil-beslemeliyiz/75/34/",
-      image: "/images/cat nutrition.jpg",
+    image: "/images/cat nutrition.jpg",
   },
 
   {
@@ -41,7 +41,7 @@ const features: Feature[] = [
       "Yavru kedilerde ilk 6 ayda aşılar çok önemlidir. Yılda en az 1 kez genel sağlık kontrolü yapılmalı. İç ve dış parazit ilaçları düzenli verilmelidir.",
     tutorialLink:
       "https://www.petlebi.com/blog/kedilerde-genel-saglik-muayenesinde-dikkat-edilmesi-gerekenler",
-      image: "/images/Veterinary Checks.jpg",
+    image: "/images/Veterinary Checks.jpg",
   },
   {
     category: "Toilet Training and Cleaning",
@@ -50,7 +50,7 @@ const features: Feature[] = [
       "Kedi kumu temiz olmalı; her gün topakları alınmalı. Kedi kumu kabı sessiz, özel bir köşede bulunmalı.",
     tutorialLink:
       "https://www.petlebi.com/blog/yavru-kedi-tuvalet-egitimi-nasil-verilir",
-      image: "/images/Toilet Training and Cleaning.jpg",
+    image: "/images/Toilet Training and Cleaning.jpg",
   },
   {
     category: "Play and Exercise",
@@ -59,7 +59,7 @@ const features: Feature[] = [
       "Günlük 15–30 dakika oyun kedinin hem fiziksel hem zihinsel sağlığı için önemlidir. Tırmalama tahtası, zeka oyuncakları ve lazer gibi aktiviteler ilgisini çeker.",
     tutorialLink:
       "https://www.petlebi.com/blog/oyun-yoluyla-kedilere-egzersiz-yaptirma-yontemleri",
-      image: "/images/Play and Exercise.jpg",
+    image: "/images/Play and Exercise.jpg",
   },
   {
     category: "Sleeping Area",
@@ -68,8 +68,8 @@ const features: Feature[] = [
       "Kedi için sessiz, sıcak ve güvenli bir uyku alanı oluştur. Kediler günde 12–16 saat uyuyabilir, bu normaldir.",
     tutorialLink:
       "https://vetqom.com/blog/kedinizin-ve-kopeginizin-saglikli-uyku-aliskanliklari-icin-tavsiyeler#:~:text=Kedi%20ve%20k%C3%B6pekler%20i%C3%A7in%20uygun,konforlu%20bir%20uyku%20alan%C4%B1%20yarat%C4%B1labilir.",
-      image: "/images/Sleeping Area.jpg",
-    },
+    image: "/images/Sleeping Area.jpg",
+  },
   {
     category: "Love and Socialization",
     title: "Sevgi ve Sosyalleşme",
@@ -77,7 +77,7 @@ const features: Feature[] = [
       "Kediler ilgi ve sabırla yaklaşılınca çok bağlanır. Onun alanına saygı göstermek güven oluşturur.",
     tutorialLink:
       "https://www.alleycat.org/resources/cat-socialization-continuum-guide/",
-      image: "/images/Love and Socialization.jpg",
+    image: "/images/Love and Socialization.jpg",
   },
   {
     category: "Nail, Dental and Eye Care",
@@ -86,7 +86,7 @@ const features: Feature[] = [
       "Tırnaklar 2–3 haftada bir kesilmeli. Dişler özel kedi macunu ile fırçalanabilir. Göz çevresi pamukla nazikçe temizlenmeli.",
     tutorialLink:
       "https://www.petlebi.com/blog/kedilerde-pati-ve-tirnak-bakimi",
-      image: "/images/Nail, Dental and Eye Care.jpg",
+    image: "/images/Nail, Dental and Eye Care.jpg",
   },
 ];
 
@@ -110,7 +110,11 @@ const KediBakimFeatures = () => {
               /* Her öğeyi liste elemanı olarak işaretliyoruz */
               role="listitem"
               /* Başlık bağlantıları için stabil bölüm kimliği */
-              id={feature.category ? feature.category.toLowerCase().replace(/[^a-z0-9]+/g, "-") : undefined}
+              id={
+                feature.category
+                  ? feature.category.toLowerCase().replace(/[^a-z0-9]+/g, "-")
+                  : undefined
+              }
             >
               <div className="w-full aspect-[4/3] bg-muted rounded-xl border border-border/50 basis-1/2 overflow-hidden">
                 <Image
@@ -119,9 +123,9 @@ const KediBakimFeatures = () => {
                   alt={`${feature.title} görseli`}
                   width={1080}
                   height={720}
+                  priority
+                  fetchPriority="high"
                   className="w-full h-full object-cover"
-                  /* Görselleri tembel yükleyerek performansı artırıyoruz */
-                  loading="lazy"
                   /* Responsive görüntü boyutları bildirimi */
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
@@ -130,11 +134,17 @@ const KediBakimFeatures = () => {
                 <span className="uppercase font-medium text-sm text-muted-foreground">
                   {feature.category}
                 </span>
-                
+
                 {/* Bölüm başlığını tanımlayıcı bir id ile işaretliyoruz */}
                 <h4
                   className="my-3 text-2xl font-semibold tracking-tight"
-                  id={`${feature.category ? feature.category.toLowerCase().replace(/[^a-z0-9]+/g, "-") : ""}-title`}
+                  id={`${
+                    feature.category
+                      ? feature.category
+                          .toLowerCase()
+                          .replace(/[^a-z0-9]+/g, "-")
+                      : ""
+                  }-title`}
                 >
                   {feature.title}
                 </h4>
