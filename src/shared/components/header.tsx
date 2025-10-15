@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { NavMenu } from "@/components/nav-menu";
 import { NavigationSheet } from "@/components/navigation-sheet";
+import { ThemeToggle } from "@/components/ui/theme-toggle"; // Dark mode toggle bileşeni
 import { Cat, Rocket, SunIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -25,10 +26,9 @@ const Header = () => {
               Sign In
             </Button>
             <Button>Sign Up</Button>
-            <Button size="icon" variant="outline">
-              <SunIcon />
-            </Button>
-
+            {/* Eski SunIcon yerine yeni ThemeToggle bileşeni */}
+            <ThemeToggle />
+            
             {/* Mobile Menu */}
             <div className="md:hidden">
               <NavigationSheet />
