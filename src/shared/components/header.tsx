@@ -27,9 +27,11 @@ const Header = () => {
 
           <div className="flex items-center gap-3">
             <Button variant="outline" className="hidden sm:inline-flex">
-              Giriş Yap
+              <Link href="/girisyap">Giriş Yap</Link>
             </Button>
-            <Button>Kayıt Ol</Button>
+            <Button>
+              <Link href="/kayitol">Kayıt Ol</Link>
+            </Button>
             {/* Eski SunIcon yerine yeni ThemeToggle bileşeni */}
             <ThemeToggle />
 
