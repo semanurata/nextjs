@@ -11,15 +11,21 @@ export default function Cinsler() {
   return (
     <>
       {/* Arama kutusu: kedi cinslerini başlık/açıklamaya göre filtreler */}
-      <div className="max-w-(--breakpoint-lg) w-full mx-auto px-6 mt-10">
-        <label htmlFor="breed-search" className="sr-only">Kedi cinsi ara</label>{/* Erişilebilirlik için gizli etiket */}
+      <div className="max-w-(--breakpoint-lg) w-full mx-auto px-6 mt-24">
+        <label htmlFor="breed-search" className="sr-only">
+          Kedi cinsi ara
+        </label>
+        {/* Erişilebilirlik için gizli etiket */}
         <div className="relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />{/* Arama ikonu */}
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+          {/* Arama ikonu */}
           <Input
             id="breed-search"
             placeholder="Kedi cinsi veya özellik ara..."
             value={query}
-            onChange={(e: ChangeEvent<HTMLInputElement>) => setQuery(e.target.value)}
+            onChange={(e: ChangeEvent<HTMLInputElement>) =>
+              setQuery(e.target.value)
+            }
             className="pl-10"
           />
         </div>
