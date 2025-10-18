@@ -14,23 +14,19 @@ const faq = [
   },
   {
     question: "❓ Kediler neden mırıldanır?",
-    answer:
-      "➡️ Mutlu olduklarında… bazen de kendilerini sakinleştirmek için.",
+    answer: "➡️ Mutlu olduklarında… bazen de kendilerini sakinleştirmek için.",
   },
   {
     question: "❓ Kediler geceleri neden bu kadar aktif?",
-    answer:
-      "➡️ Çünkü içlerinde minik bir gece avcısı yaşıyor.",
+    answer: "➡️ Çünkü içlerinde minik bir gece avcısı yaşıyor.",
   },
   {
     question: "❓ Kediler ilgi istemediğinde ne yapmalı?",
-    answer:
-      "➡️ Onurlu bir şekilde geri çekil ve uygun zamanda tekrar dene.",
+    answer: "➡️ Onurlu bir şekilde geri çekil ve uygun zamanda tekrar dene.",
   },
   {
     question: "❓ Kediler insanları anlar mı?",
-    answer:
-      "➡️ Evet… sadece bazen görmezden gelmeyi tercih eder.",
+    answer: "➡️ Evet… sadece bazen görmezden gelmeyi tercih eder.",
   },
   {
     question: "❓ Kedi sahiplenmeden önce ne hazırlamalıyım?", // Yeni SSS maddesi
@@ -55,7 +51,11 @@ const FAQ01 = () => {
         {/* Tek seferde bir sorunun açık kalacağı akordeon */}
         <Accordion type="single" className="mt-6" defaultValue="question-0">
           {faq.map(({ question, answer }, index) => (
-            <AccordionItem key={question} value={`question-${index}`}>
+            <AccordionItem
+              key={question}
+              value={`question-${index}`}
+              className="lg:min-w-xl md:min-w-md"
+            >
               <AccordionTrigger className="text-left text-lg">
                 {question}
               </AccordionTrigger>

@@ -58,7 +58,7 @@ export default function GirisYap() {
         </div>
 
         <div className="p-3">
-          <p className="text-accent text-center text-sm">
+          <p className="text-white text-center text-sm">
             Hesabınız yok mu?
             <Button asChild variant="link" className="px-2">
               <Link href="/kayitol">Hesap oluştur</Link>

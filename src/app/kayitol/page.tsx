@@ -1,6 +1,4 @@
-
 "use client";
-
 
 import { Button } from "@/components/ui/button";
 import {
@@ -15,15 +13,15 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
-import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { useForm, SubmitHandler } from "react-hook-form";
 
 const formSchema = z.object({
   email: z.string().email(),
   password: z.string().min(8, "Password must be at least 8 characters long"),
 });
 
-const kayitol = () => {
+const KayitOl = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     defaultValues: {
       email: "",
@@ -39,10 +37,7 @@ const kayitol = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-muted">
       <div className="max-w-sm w-full flex flex-col items-center border rounded-lg px-6 py-8 shadow-sm/5 bg-card">
-       
-        <p className="mt-4 text-xl font-semibold tracking-tight">
-          Kayıt Ol
-        </p>
+        <p className="mt-4 text-xl font-semibold tracking-tight">Kayıt Ol</p>
 
         <Button className="mt-8 w-full gap-3">
           <GoogleLogo />
@@ -87,7 +82,7 @@ const kayitol = () => {
                   <FormControl>
                     <Input
                       type="password"
-                      placeholder="Password"
+                      placeholder="Şifre"
                       className="w-full"
                       {...field}
                     />
@@ -97,7 +92,7 @@ const kayitol = () => {
               )}
             />
             <Button type="submit" className="mt-4 w-full">
-            Miyav
+              Miyav
             </Button>
           </form>
         </Form>
@@ -111,7 +106,10 @@ const kayitol = () => {
           </Link>
           <p className="text-sm text-center">
             Zaten Hesabın Var Mı?
-            <Link href="/girisyap" className="ml-1 underline text-muted-foreground">
+            <Link
+              href="/girisyap"
+              className="ml-1 underline text-muted-foreground"
+            >
               Giriş Yap
             </Link>
           </p>
@@ -157,4 +155,4 @@ const GoogleLogo = () => (
   </svg>
 );
 
-export default kayitol;
+export default KayitOl;
