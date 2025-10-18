@@ -16,7 +16,7 @@ type Feature = {
 // Özellikler listesini tipleyerek daha güvenli ve otokomplet destekli hale getiriyoruz
 const features: Feature[] = [
   {
-    category: "Fur Care",
+    category: "Yumuşacak Kediler",
     title: "Tüy Bakımı",
     details:
       "Kısa tüylü kediler, Haftada 1-2 kez taramak yeterlidir. Uzun tüylü kediler, Günlük tarama gerekir. Tüy yumağı oluşumunu önler.",
@@ -25,7 +25,7 @@ const features: Feature[] = [
     image: "/images/cat fur care.jpg",
   },
   {
-    category: "Nutrition",
+    category: "Tok Kediler",
     title: "Beslenme",
     details:
       "Yaşa, kiloya ve aktiviteye göre kaliteli mama seçilmeli. Sürekli temiz su bulundurmak şarttır. Ev yemekleri ve süt genelde sindirim sorunlarına neden olabilir.",
@@ -35,7 +35,7 @@ const features: Feature[] = [
   },
 
   {
-    category: "Veterinary Checks",
+    category: "Sağlıklı Kediler",
     title: "Veteriner Kontrolleri",
     details:
       "Yavru kedilerde ilk 6 ayda aşılar çok önemlidir. Yılda en az 1 kez genel sağlık kontrolü yapılmalı. İç ve dış parazit ilaçları düzenli verilmelidir.",
@@ -44,7 +44,7 @@ const features: Feature[] = [
     image: "/images/Veterinary Checks.jpg",
   },
   {
-    category: "Toilet Training and Cleaning",
+    category: "Tuvalet Eğitimi ve Temizlik",
     title: "Tuvalet Eğitimi ve Temizlik",
     details:
       "Kedi kumu temiz olmalı; her gün topakları alınmalı. Kedi kumu kabı sessiz, özel bir köşede bulunmalı.",
@@ -53,7 +53,7 @@ const features: Feature[] = [
     image: "/images/Toilet Training and Cleaning.jpg",
   },
   {
-    category: "Play and Exercise",
+    category: "Eğlence",
     title: "Oyun ve Egzersiz",
     details:
       "Günlük 15–30 dakika oyun kedinin hem fiziksel hem zihinsel sağlığı için önemlidir. Tırmalama tahtası, zeka oyuncakları ve lazer gibi aktiviteler ilgisini çeker.",
@@ -62,7 +62,7 @@ const features: Feature[] = [
     image: "/images/Play and Exercise.jpg",
   },
   {
-    category: "Sleeping Area",
+    category: "Tatlı rüyalar",
     title: "Uyku Alanı",
     details:
       "Kedi için sessiz, sıcak ve güvenli bir uyku alanı oluştur. Kediler günde 12–16 saat uyuyabilir, bu normaldir.",
@@ -71,7 +71,7 @@ const features: Feature[] = [
     image: "/images/Sleeping Area.jpg",
   },
   {
-    category: "Love and Socialization",
+    category: "Aşk Yani Love",
     title: "Sevgi ve Sosyalleşme",
     details:
       "Kediler ilgi ve sabırla yaklaşılınca çok bağlanır. Onun alanına saygı göstermek güven oluşturur.",
@@ -80,7 +80,7 @@ const features: Feature[] = [
     image: "/images/Love and Socialization.jpg",
   },
   {
-    category: "Nail, Dental and Eye Care",
+    category: "Bakım",
     title: "Tırnak, Diş ve Göz Bakımı",
     details:
       "Tırnaklar 2–3 haftada bir kesilmeli. Dişler özel kedi macunu ile fırçalanabilir. Göz çevresi pamukla nazikçe temizlenmeli.",
@@ -97,7 +97,7 @@ const KediBakimFeatures = () => {
         <h2 className="text-4xl md:text-[2.75rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-xl text-pretty sm:mx-auto sm:text-center">
           <SparklesText>KEDİ BAKIMINA DAİR HER ŞEYY!</SparklesText>
         </h2>
-        <p className="mt-2 text-muted-foreground text-lg sm:text-xl sm:text-center">
+        <p className="mt-2 text-muted text-lg sm:text-xl sm:text-center">
           Kedi bakımı sadece mama vermekle bitmez! Sağlıklı bir yaşam için
           dikkat edilmesi gereken tüm bakım önerilerini adım adım paylaştık.
         </p>
@@ -131,7 +131,7 @@ const KediBakimFeatures = () => {
                 />
               </div>
               <div className="basis-1/2 shrink-0">
-                <span className="uppercase font-medium text-sm text-muted-foreground">
+                <span className="uppercase font-medium text-sm text-muted">
                   {feature.category}
                 </span>
 
@@ -148,7 +148,7 @@ const KediBakimFeatures = () => {
                 >
                   {feature.title}
                 </h4>
-                <p className="text-muted-foreground">{feature.details}</p>
+                <p className="text-muted">{feature.details}</p>
                 {/* Dış bağlantıyı yeni sekmede açan bağlantıyı butonun DIŞINA alıyoruz */}
                 <Link
                   href={feature.tutorialLink}
@@ -157,7 +157,8 @@ const KediBakimFeatures = () => {
                   aria-label={`${feature.title} hakkında daha fazla bilgi al`}
                 >
                   <Button size="lg" className="mt-6 rounded-full gap-3">
-                    Learn More <ArrowRight />
+                    Daha Fazla
+                    <ArrowRight />
                   </Button>
                 </Link>
               </div>

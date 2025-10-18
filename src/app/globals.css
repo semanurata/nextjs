@@ -82,7 +82,7 @@
   --radius: 0.625rem;
   /* Tatlı pembe-sarı-kahve renk şeması */
   --background: oklch(0.98 0.02 60); /* Açık pembe-krem */
-  --foreground: oklch(0.25 0.05 30); /* Sıcak koyu kahve */
+  --foreground: oklch(27.1% 0.105 12.094); /* Sıcak koyu kahve */
   --card: oklch(0.95 0.03 55); /* Açık pembe */
   --card-foreground: oklch(0.25 0.05 30);
   --popover: oklch(0.95 0.03 55);
@@ -91,7 +91,7 @@
   --primary-foreground: oklch(0.98 0.02 60);
   --secondary: oklch(0.9 0.08 50); /* Tatlı sarı */
   --secondary-foreground: oklch(0.3 0.05 30);
-  --muted: oklch(0.92 0.05 55);
+  --muted: oklch(27.1% 0.105 12.094);
   --muted-foreground: oklch(0.5 0.05 35);
   --accent: oklch(0.85 0.12 45); /* Altın sarısı */
   --accent-foreground: oklch(0.25 0.05 30);
@@ -99,11 +99,11 @@
   --border: oklch(0.88 0.05 50);
   --input: oklch(0.88 0.05 50);
   --ring: oklch(0.6 0.15 25);
-  --chart-1: oklch(0.7 0.15 30); /* Turuncu */
-  --chart-2: oklch(0.65 0.12 60); /* Sarı */
-  --chart-3: oklch(0.6 0.1 120); /* Yeşil */
-  --chart-4: oklch(0.7 0.1 200); /* Mavi */
-  --chart-5: oklch(0.65 0.12 280); /* Mor */
+  --chart-1: oklch(81% 0.117 11.638); /* Turuncu */
+  --chart-2: oklch(92.4% 0.12 95.746); /* Sarı */
+  --chart-3: oklch(88.5% 0.062 18.334); /* Yeşil */
+  --chart-4: oklch(62.3% 0.214 259.815); /* Mavi */
+  --chart-5: oklch(74% 0.238 322.16); /* Mor */
   --sidebar: oklch(0.95 0.03 55);
   --sidebar-foreground: oklch(0.25 0.05 30);
   --sidebar-primary: oklch(0.6 0.15 25);
@@ -116,37 +116,37 @@
 
 .dark {
   /* Dark mode için tatlı koyu pembe-sarı-kahve tonları */
-  --background: oklch(0.15 0.02 30); /* Koyu kahve */
-  --foreground: oklch(0.9 0.02 60); /* Açık pembe-krem */
-  --card: oklch(0.2 0.03 35); /* Koyu gri-kahve */
-  --card-foreground: oklch(0.9 0.02 60);
-  --popover: oklch(0.2 0.03 35);
-  --popover-foreground: oklch(0.9 0.02 60);
-  --primary: oklch(0.7 0.15 25); /* Parlak turuncu */
-  --primary-foreground: oklch(0.15 0.02 30);
-  --secondary: oklch(0.3 0.08 50); /* Koyu sarı */
-  --secondary-foreground: oklch(0.9 0.02 60);
-  --muted: oklch(0.25 0.05 40);
-  --muted-foreground: oklch(0.6 0.05 50);
-  --accent: oklch(0.5 0.12 45); /* Altın */
-  --accent-foreground: oklch(0.9 0.02 60);
-  --destructive: oklch(0.6 0.2 15);
-  --border: oklch(0.3 0.05 40);
-  --input: oklch(0.3 0.05 40);
-  --ring: oklch(0.7 0.15 25);
-  --chart-1: oklch(0.7 0.15 30);
-  --chart-2: oklch(0.65 0.12 60);
-  --chart-3: oklch(0.6 0.1 120);
-  --chart-4: oklch(0.7 0.1 200);
-  --chart-5: oklch(0.65 0.12 280);
-  --sidebar: oklch(0.2 0.03 35);
-  --sidebar-foreground: oklch(0.9 0.02 60);
-  --sidebar-primary: oklch(0.7 0.15 25);
-  --sidebar-primary-foreground: oklch(0.15 0.02 30);
-  --sidebar-accent: oklch(0.3 0.08 50);
-  --sidebar-accent-foreground: oklch(0.9 0.02 60);
-  --sidebar-border: oklch(0.3 0.05 40);
-  --sidebar-ring: oklch(0.7 0.15 25);
+  --background: oklch(0.15 0.02 30); /* Koyu kahve - Ana sayfa arkaplanı */
+  --foreground: oklch(80.8% 0.114 19.571); /* Açık pembe-krem - Ana metin rengi */
+  --card: oklch(28.4% 0.109 3.907); /* Koyu gri-kahve - Kart bileşenleri arkaplanı */
+  --card-foreground: oklch(0.9 0.02 60); /* Kart içindeki metin rengi */
+  --popover: oklch(0.2 0.03 35); /* Popover/dropdown arkaplanı */
+  --popover-foreground: oklch(0.9 0.02 60); /* Popover içindeki metin rengi */
+  --primary: oklch(0.7 0.15 25); /* Parlak turuncu - Ana butonlar ve linkler */
+  --primary-foreground: oklch(0.15 0.02 30); /* Primary butonların metin rengi */
+  --secondary: oklch(0.3 0.08 50); /* Koyu sarı - İkincil butonlar */
+  --secondary-foreground: oklch(0.9 0.02 60); /* Secondary butonların metin rengi */
+  --muted:oklch(80.8% 0.114 19.571); /* Soluk arkaplan alanları */
+  --muted-foreground: oklch(80.8% 0.114 19.571); /* Soluk metin rengi */
+  --accent: oklch(80.8% 0.114 19.571); /* Altın - Vurgu rengi */
+  --accent-foreground: oklch(0.9 0.02 60); /* Accent renginin metin rengi */
+  --destructive: oklch(0.6 0.2 15); /* Silme/tehlikeli işlemler için kırmızı */
+  --border: oklch(0.3 0.05 40); /* Kenarlık rengi */
+  --input: oklch(0.3 0.05 40); /* Input alanları arkaplanı */
+  --ring: oklch(0.7 0.15 25); /* Focus ring rengi */
+  --chart-1: oklch(0.7 0.15 30); /* Grafik 1. renk */
+  --chart-2: oklch(0.65 0.12 60); /* Grafik 2. renk */
+  --chart-3: oklch(0.6 0.1 120); /* Grafik 3. renk */
+  --chart-4: oklch(0.7 0.1 200); /* Grafik 4. renk */
+  --chart-5: oklch(0.65 0.12 280); /* Grafik 5. renk */
+  --sidebar: oklch(0.2 0.03 35); /* Yan menü arkaplanı */
+  --sidebar-foreground: oklch(0.9 0.02 60); /* Yan menü metin rengi */
+  --sidebar-primary: oklch(0.7 0.15 25); /* Yan menü ana renk */
+  --sidebar-primary-foreground: oklch(0.15 0.02 30); /* Yan menü ana rengin metin rengi */
+  --sidebar-accent: oklch(0.3 0.08 50); /* Yan menü vurgu rengi */
+  --sidebar-accent-foreground: oklch(0.9 0.02 60); /* Yan menü vurgu renginin metin rengi */
+  --sidebar-border: oklch(0.3 0.05 40); /* Yan menü kenarlık rengi */
+  --sidebar-ring: oklch(0.7 0.15 25); /* Yan menü focus ring rengi */
 }
 
 @layer base {
@@ -159,7 +159,7 @@
   
   /* Ana arkaplan: tatlı pembe-sarı-kahve gradient */
   body {
-    background: linear-gradient(135deg, #fef2f2 0%, #fce7f3 15%, #fef3c7 30%, #fde68a 45%, #f59e0b 60%, #d97706 75%, #92400e 90%, #78350f 100%);
+    background: linear-gradient(135deg, #fef2f2 0%, #fce7f3 15%, #fef3c7 30%, #fde68a 45%, #bb608c 60%, #cb4a9a 75%, #920e38 90%, #812ca0 100%);
     background-attachment: fixed; /* Sabit gradient arkaplan */
     min-height: 100vh;
   }
@@ -185,12 +185,12 @@
   
   /* Dark mode için tatlı koyu gradient */
   .dark body {
-    background: linear-gradient(135deg, #2d1b2e 0%, #3d2a3e 15%, #4a3c2a 30%, #5d4e37 45%, #6b5b47 60%, #8b7355 75%, #a68b5b 90%, #c4a484 100%);
+    background: linear-gradient(135deg, #eae3ea 0%, #651e69 15%, #6c0b33 30%, #53102e 45%, #744d72 60%, #8b5571 75%, #ad779a 90%, #e6b2c3 100%);
   }
   
   .dark body::before {
     background-image: 
-      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05) 2px, transparent 2px),
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0) 2px, transparent 2px),
       radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 2px, transparent 2px),
       radial-gradient(circle at 40% 60%, rgba(255,255,255,0.05) 2px, transparent 2px),
       radial-gradient(circle at 60% 40%, rgba(255,255,255,0.05) 2px, transparent 2px);

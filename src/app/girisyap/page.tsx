@@ -17,15 +17,15 @@ export default function GirisYap() {
               <Cat />
             </Link>
             <h1 className="mb-1 mt-4 text-xl font-semibold">
-              Sign In to Tailark
+              Giriş Yapın
             </h1>
-            <p className="text-sm">Welcome back! Sign in to continue</p>
+            <p className="text-sm">Tekrar hoş geldiniz! Devam etmek için oturum açın</p>
           </div>
 
           <div className="mt-6 space-y-6">
             <div className="space-y-2">
               <Label htmlFor="email" className="block text-sm">
-                Username
+                Kullanıcı Adı
               </Label>
               <Input type="email" required name="email" id="email" />
             </div>
@@ -33,14 +33,14 @@ export default function GirisYap() {
             <div className="space-y-0.5">
               <div className="flex items-center justify-between">
                 <Label htmlFor="pwd" className="text-sm">
-                  Password
+                  Şifre
                 </Label>
                 <Button asChild variant="link" size="sm">
                   <Link
                     href="#"
                     className="link intent-info variant-ghost text-sm"
                   >
-                    Forgot your Password ?
+                    Şifremi Unuttum?
                   </Link>
                 </Button>
               </div>
@@ -53,15 +53,15 @@ export default function GirisYap() {
               />
             </div>
 
-            <Button className="w-full">Sign In</Button>
+            <Button className="w-full">Miyav!</Button>
           </div>
         </div>
 
         <div className="p-3">
-          <p className="text-accent-foreground text-center text-sm">
+          <p className="text-white text-center text-sm">
             Hesabınız yok mu?
             <Button asChild variant="link" className="px-2">
-              <Link href="#">Create account</Link>
+              <Link href="/kayitol">Hesap oluştur</Link>
             </Button>
           </p>
         </div>
