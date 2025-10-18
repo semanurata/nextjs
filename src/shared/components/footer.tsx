@@ -10,28 +10,28 @@ import Link from "next/link";
 
 const footerLinks = [
   {
-    title: "Overview",
-    href: "#",
+    title: "Anasayfa",
+    href: "/",
   },
   {
-    title: "Features",
-    href: "#",
+    title: "Kedi Bakım",
+    href: "/kedi-bakim",
   },
   {
-    title: "Pricing",
-    href: "#",
+    title: "Cinsler",
+    href: "/cinsler",
   },
   {
-    title: "Careers",
-    href: "#",
+    title: "Sahiplendirme",
+    href: "/sahiplendirme",
   },
   {
-    title: "Help",
-    href: "#",
+    title: "Giriş Yap",
+    href: "/girisyap",
   },
   {
-    title: "Privacy",
-    href: "#",
+    title: "Kayıt Ol",
+    href: "/kayitol",
   },
 ];
 

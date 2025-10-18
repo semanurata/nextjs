@@ -136,7 +136,7 @@ const NameGenerator = () => {
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
           <SparklesText>İsim Bulucu: Kedin İçin İsim Önerisi</SparklesText>
         </h2>
-        <p className="text-muted-foreground text-lg">
+        <p className="text-muted text-lg">
           Kedinin karakterine ve cinsine uygun mükemmel ismi bul! 🐱✨
         </p>
       </div>

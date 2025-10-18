@@ -97,7 +97,7 @@ const KediBakimFeatures = () => {
         <h2 className="text-4xl md:text-[2.75rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-xl text-pretty sm:mx-auto sm:text-center">
           <SparklesText>KEDİ BAKIMINA DAİR HER ŞEYY!</SparklesText>
         </h2>
-        <p className="mt-2 text-muted-foreground text-lg sm:text-xl sm:text-center">
+        <p className="mt-2 text-muted text-lg sm:text-xl sm:text-center">
           Kedi bakımı sadece mama vermekle bitmez! Sağlıklı bir yaşam için
           dikkat edilmesi gereken tüm bakım önerilerini adım adım paylaştık.
         </p>
@@ -131,7 +131,7 @@ const KediBakimFeatures = () => {
                 />
               </div>
               <div className="basis-1/2 shrink-0">
-                <span className="uppercase font-medium text-sm text-muted-foreground">
+                <span className="uppercase font-medium text-sm text-muted">
                   {feature.category}
                 </span>
 
@@ -148,7 +148,7 @@ const KediBakimFeatures = () => {
                 >
                   {feature.title}
                 </h4>
-                <p className="text-muted-foreground">{feature.details}</p>
+                <p className="text-muted">{feature.details}</p>
                 {/* Dış bağlantıyı yeni sekmede açan bağlantıyı butonun DIŞINA alıyoruz */}
                 <Link
                   href={feature.tutorialLink}
@@ -157,7 +157,7 @@ const KediBakimFeatures = () => {
                   aria-label={`${feature.title} hakkında daha fazla bilgi al`}
                 >
                   <Button size="lg" className="mt-6 rounded-full gap-3">
-                    Learn More <ArrowRight />
+                    Daha Fazla<ArrowRight />
                   </Button>
                 </Link>
               </div>

@@ -161,7 +161,7 @@ const PersonalityTest = () => {
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
           <SparklesText>Sen Hangi Kedi Türüsün?</SparklesText>
         </h2>
-        <p className="text-muted-foreground text-lg">
+        <p className="text-muted text-lg">
           Kişilik testi ile sana en uygun kedi türünü keşfet! 🐱
         </p>
       </div>
