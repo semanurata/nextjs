@@ -50,7 +50,7 @@ const Footer = () => {
                 <li key={title}>
                   <Link
                     href={href}
-                    className="text-muted hover:text-foreground"
+                    className="text-black dark:text-white hover:text-foreground"
                   >
                     {title}
                   </Link>
@@ -61,7 +61,7 @@ const Footer = () => {
           <Separator />
           <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
             {/* Copyright */}
-            <span className="text-muted">
+            <span className="text-blackd dark:text-white">
               &copy; {new Date().getFullYear()}{" "}
               <Link href="/" target="_blank">
                 MİYAV MİYAV
@@ -69,7 +69,7 @@ const Footer = () => {
               . All rights reserved.
             </span>
 
-            <div className="flex items-center gap-5 text-muted">
+            <div className="flex items-center gap-5 text-black dark:text-white">
               <Link href="#" target="_blank">
                 <TwitterIcon className="h-5 w-5" />
               </Link>

@@ -134,7 +134,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="rounded-full text-base shadow-none border-white text-white hover:bg-white hover:text-black"
+              className="rounded-full text-base shadow-none border-white text-black dark:text-white hover:bg-white hover:text-black"
             >
               <CirclePlay className="size-5" /> Kedi İzle{/* Türkçe buton metni */}
             </Button>

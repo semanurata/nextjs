@@ -8,13 +8,13 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div className="">
-      <nav className="h-16 bg-background border-b">
+      <nav className="fixed top-0 left-0 right-0 z-50 h-16 bg-background border-b">
         <div className="h-full flex items-center justify-between max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-8">
             <Button
               variant="outline"
               size="icon"
-              className="flex justify-start cursor-pointer"
+              className="flex justify-center cursor-pointer"
             >
               <Link href="/">
                 <Cat />
@@ -27,9 +27,11 @@ const Header = () => {
 
           <div className="flex items-center gap-3">
             <Button variant="outline" className="hidden sm:inline-flex">
-              Giriş Yap
+              <Link href="/girisyap">Giriş Yap</Link>
             </Button>
-            <Button>Kayıt Ol</Button>
+            <Button>
+              <Link href="/kayitol">Kayıt Ol</Link>
+            </Button>
             {/* Eski SunIcon yerine yeni ThemeToggle bileşeni */}
             <ThemeToggle />
 
