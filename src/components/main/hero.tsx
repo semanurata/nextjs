@@ -23,22 +23,19 @@ const Hero = () => {
       src: "/images/hero2.jpg",
       alt: "MİYAV MİYAV!",
       title: "MİYAV MİYAV!",
-      description:
-        "Bir kediyle tanıştığın an hayatın güzelleşir.",
+      description: "Bir kediyle tanıştığın an hayatın güzelleşir.",
     },
     {
       src: "/images/hero3.jpg",
       alt: "MİYAV MİYAV!",
       title: "MİYAV MİYAV!",
-      description:
-        "Kedime sordum, bu siteyi o onayladı.",
+      description: "Kedime sordum, bu siteyi o onayladı.",
     },
     {
       src: "/images/hero4.jpg",
       alt: "MİYAV MİYAV!",
       title: "MİYAV MİYAV!",
-      description:
-        "Kedim bu siteyi beğendi.",
+      description: "Kedim bu siteyi beğendi.",
     },
     {
       src: "/images/hero5.jpg", // Yeni görsel yolu
@@ -93,8 +90,8 @@ const Hero = () => {
             className="flex rounded-full py-1 border-border bg-white/90 text-black hover:bg-white"
             asChild
           >
-            <Link href="#">
-              Just released v1.0.0 <ArrowUpRight className="ml-1 size-4" />
+            <Link href="/kayitol">
+              Hemen Kayıt Ol <ArrowUpRight className="ml-1 size-4" />
             </Link>
           </Badge>
         </div>
@@ -116,12 +113,17 @@ const Hero = () => {
         {/* Butonlar */}
         <div className="mt-12 flex items-center justify-center gap-4">
           {/* Başlangıç butonunu kedi cinsleri sayfasına yönlendiriyoruz */}
-          <Link href="/cinsler" aria-label="Kedi cinslerini keşfet sayfasına git">{/* Erişilebilirlik için açıklayıcı etiket */}
+          <Link
+            href="/cinsler"
+            aria-label="Kedi cinslerini keşfet sayfasına git"
+          >
+            {/* Erişilebilirlik için açıklayıcı etiket */}
             <Button
               size="lg"
               className="rounded-full text-base bg-white text-black hover:bg-white/90"
             >
-              Keşfet <ArrowUpRight className="size-5" />{/* Daha net Türkçe CTA */}
+              Keşfet <ArrowUpRight className="size-5" />
+              {/* Daha net Türkçe CTA */}
             </Button>
           </Link>
           {/* Tanıtım videosuna giden buton */}
@@ -136,7 +138,8 @@ const Hero = () => {
               size="lg"
               className="rounded-full text-base shadow-none border-white text-black dark:text-white hover:bg-white hover:text-black"
             >
-              <CirclePlay className="size-5" /> Kedi İzle{/* Türkçe buton metni */}
+              <CirclePlay className="size-5" /> Kedi İzle
+              {/* Türkçe buton metni */}
             </Button>
           </Link>
         </div>
